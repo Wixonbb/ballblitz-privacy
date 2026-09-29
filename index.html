@@ -19,10 +19,12 @@
     body { color: #e6e6e6; background: #0f0f14; }
     a { color: #4fc3f7; }
     code { background: #1e1e26; }
+    .lang { border-color: rgba(255,255,255,0.15); }
   }
   h1 { font-size: 1.8em; margin-bottom: 0.1em; }
   h2 { font-size: 1.2em; margin-top: 1.8em; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 4px; }
   .meta { color: #777; font-size: 0.9em; margin-bottom: 2em; }
+  .lang { font-size: 0.9em; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid rgba(0,0,0,0.1); }
   a { color: #0277bd; }
   code { background: #f2f2f5; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
   ul { padding-left: 1.3em; }
@@ -31,8 +33,10 @@
 </head>
 <body>
 
+<p class="lang"><strong>English</strong> &nbsp;|&nbsp; <a href="pt/">Português (Brasil)</a></p>
+
 <h1>Privacy Policy — Ball Blitz</h1>
-<p class="meta">Last updated: 26 June 2026</p>
+<p class="meta">Last updated: 29 September 2026</p>
 
 <p>
 This Privacy Policy explains how the mobile game <strong>Ball Blitz</strong> ("the App", "we", "us")
@@ -91,8 +95,14 @@ not transmitted to us or to any server. Uninstalling the App removes this local 
 
 <h2>6. Permissions</h2>
 <p>
-The App requests only the <code>INTERNET</code> permission, which is used solely to load ads.
-The App does not access your contacts, photos, microphone, camera, files, or precise location.
+The App itself requests only the <code>INTERNET</code> permission. The Google Mobile Ads SDK
+included in the App adds a few standard, non-sensitive permissions it needs to serve ads: network
+state access (<code>ACCESS_NETWORK_STATE</code>), access to the advertising ID
+(<code>AD_ID</code> and the Android ad-services permissions), and <code>WAKE_LOCK</code> /
+<code>FOREGROUND_SERVICE</code> for background ad tasks.
+The App does not request any location permission and does not access your contacts, photos,
+microphone, camera, files, or precise location. Approximate location may be inferred by Google
+from your IP address, as described in section 3.
 </p>
 
 <h2>7. Children</h2>
